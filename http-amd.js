@@ -141,4 +141,3 @@ else
     })();
     exports.Promise = Promise;
 });
-//# sourceMappingURL=http-amd.js.map
