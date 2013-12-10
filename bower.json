@@ -1,0 +1,17 @@
+{
+  "name": "Http.js",
+  "version": "0.1",
+  "homepage": "https://github.com/nauman1225/Http.js",
+  "authors": [
+    "nauman1225 <nauman1225@gmail.com>"
+  ],
+  "description": "Http.js is an object oriented javascript library for making http requests and ajax calls.",
+  "license": "BSD 2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
