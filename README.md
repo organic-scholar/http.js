@@ -119,4 +119,3 @@ and request can be restart.
 Response from request is also available on request object.
 
    	request.response;
-[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/852b9bc744d1a9a736728475219f81b1 "githalytics.com")](http://githalytics.com/nauman1225/Http.js)   	
