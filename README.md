@@ -5,33 +5,12 @@ Http.js is an object oriented javascript library for making http requests and aj
 Getting Started
 -----------------
 
-This repo contains both AMD and non-AMD version of Http.js.
-
-### For AMD version. ###
-
-    <script data-main="path to main.js" src="path to require.js" type="text/javascript">
-
-In main.js
-
-    require.config({
-        paths: {
-            Http: 'path to http-amd.js'
-        }
-    });
-
-    require([Http], function(Http){
-
-    });
-
-### For non-AMD version. ###
-	<script src="path to http.js" type="text/javascript">
-
-__Http.js can perform GET, POST, PUT and DELETE Http verbs.__
+This library is also AMD compatible can be require using require js.
 
 ### GET ###
 
-		
 	var request = new Http.Get(Url, Async);
+
 	request.start().then(function(response) {
 	
 	}).fail(function(error, errorCode) {
@@ -67,39 +46,8 @@ We instantiated POST request by providing Url, Data and Async for process to be 
 For starting the request process we call start() method on request object
 and it returns a promise.
 
-
-### PUT ###
-
-		
-	var request = new Http.Put(Url, Data, Async);
-	request.start().
-	then(function(response){
-	
-	}).fail(function(error, errorCode){
-	
-	});
-		
-
-+ Url: String.
-+ Data: Any.
-+ Async: Boolean.
-
-### DELETE ###
-
-
-	var request = new Http.Delete(Url, Data, Async);
-	request.start().then(function(response){
-		
-	}).
-	fail(function(error, errorCode){
-	
-	});
-		
-+ Url:String.
-+ Data:Any.
-+ Async:Boolean.		
-
 ## Reference
+
 ### Request
 
 The request object(Get, Post, Put, Delete) contains data and url,
@@ -116,6 +64,6 @@ and request can be restart.
 
     request.restart();
 
-Response from request is also available on request object.
+XHR object from request is also available on request object.
 
-   	request.response;
+   	request.xhr;
