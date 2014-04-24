@@ -2,6 +2,6 @@
     if (typeof define === 'function' && define.amd) {
         define([], factory);
     } else {
-        root.http = factory();
+        root.Http = factory();
     }
 }(this, function () {
