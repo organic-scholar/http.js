@@ -8,9 +8,11 @@ define(['./RequestManager'],
         }
         Promise.prototype.then = function(callback) {
             this.resolve = callback;
+            return this;
         };
         Promise.prototype.fail = function(callback) {
             this.reject = callback;
+            return this;
         };
 
         function Completer() {
